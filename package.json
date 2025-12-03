@@ -1,0 +1,12 @@
+{
+  "name": "templates-browser-screenshots",
+  "version": "1.0.0",
+  "description": "Screenshot automation for template demos",
+  "scripts": {
+    "screenshots": "node scripts/take-screenshots.js"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "puppeteer": "^23.0.0"
+  }
+}
