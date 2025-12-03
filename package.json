@@ -6,6 +6,7 @@
     "screenshots": "node scripts/take-screenshots.js"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "puppeteer": "^23.0.0"
   }
 }

@@ -4,7 +4,7 @@ const path = require('path');
 
 // Base URL for the served templates
 const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
-// Delay in milliseconds (5-7 seconds as specified)
+// Delay in milliseconds (6 seconds for proper page rendering)
 const WAIT_TIME = 6000;
 // Screenshot output directory
 const SCREENSHOTS_DIR = path.join(__dirname, '..', 'screenshots');

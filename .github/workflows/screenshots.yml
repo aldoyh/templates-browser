@@ -62,7 +62,8 @@ jobs:
       - name: Start local server
         run: |
           npx http-server . -p 8080 &
-          sleep 5
+          # Wait for server to be ready with health check
+          timeout 30 bash -c 'until curl -s http://localhost:8080 > /dev/null; do sleep 1; done'
 
       - name: Take screenshots of all templates
         run: npm run screenshots
