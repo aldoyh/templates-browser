@@ -55,7 +55,7 @@ async function takeScreenshot(browser, templateDir) {
             timeout: 30000 
         });
         
-        // Wait for 5-7 seconds to ensure page is fully rendered
+        // Wait for 6 seconds to ensure page is fully rendered
         console.log(`   Waiting ${WAIT_TIME}ms for rendering...`);
         await new Promise(resolve => setTimeout(resolve, WAIT_TIME));
         
